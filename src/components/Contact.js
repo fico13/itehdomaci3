@@ -13,7 +13,7 @@ const Contact = () => {
       <Container>
         <Row className="mt-5 mb-5">
           <Col>
-            <h1>Contact us! <hr/></h1>
+            <h1>Kontaktirajte nas! <hr/></h1>
             <ContactForm />
           </Col>
         </Row>

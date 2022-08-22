@@ -17,21 +17,21 @@ const ContactForm = () => {
 
     if (!firstname) {
       setSuccessfull(0);
-      alert("Please enter firstname");
+      alert("Unesite ime");
 
       return;
     }
 
     if (!lastname) {
       setSuccessfull(0);
-      alert("Please enter lastname");
+      alert("Unesite prezime");
 
       return;
     }
 
     if (!message) {
       setSuccessfull(0);
-      alert("Please enter message");
+      alert("Unesite poruku");
 
       return;
     }
@@ -43,28 +43,28 @@ const ContactForm = () => {
     <Form onSubmit={submitForm}>
 
       {successfull === 1 ? <Alert  variant="success">
-        Successfully sent. <FaCheck style={{position: "relative", top:"-1px"}} />
+        Uspešno poslato. <FaCheck style={{position: "relative", top:"-1px"}} />
       </Alert> : successfull === 0 ? <Alert variant="danger">
-          There were errors in your form.
+          Postoje greške u vašoj formi.
       </Alert> : ''}
 
       <Form.Group controlId="formBasicEmail">
-        <Form.Label>Firstname</Form.Label>
-        <Form.Control value={firstname} onChange={(e) => setFirstname(e.target.value)} type="text" placeholder="Enter your firstname" />
+        <Form.Label>Ime</Form.Label>
+        <Form.Control value={firstname} onChange={(e) => setFirstname(e.target.value)} type="text" placeholder="Unesite ime" />
       </Form.Group>
 
       <Form.Group controlId="formBasicEmail">
-        <Form.Label>Lastname</Form.Label>
-        <Form.Control value={lastname} onChange={(e) => setLastname(e.target.value)} type="text" placeholder="Enter your lastname" />
+        <Form.Label>Prezime</Form.Label>
+        <Form.Control value={lastname} onChange={(e) => setLastname(e.target.value)} type="text" placeholder="Unesite prezime" />
       </Form.Group>
 
       <Form.Group controlId="exampleForm.ControlTextarea1">
-        <Form.Label>Example textarea</Form.Label>
-        <Form.Control as="textarea" rows={3} value={message} onChange={(e) => setMessage(e.target.value)} placeholder="Enter your message" />
+        <Form.Label>Unesite tekst poruke</Form.Label>
+        <Form.Control as="textarea" rows={3} value={message} onChange={(e) => setMessage(e.target.value)} placeholder="Unesite tekst poruke" />
       </Form.Group>
 
       <Button className="w-100 d-block btn-dark" variant="primary" type="submit">
-        Submit
+        Potvrdi
       </Button>
     </Form>
   )

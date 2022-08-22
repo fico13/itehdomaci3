@@ -148,7 +148,7 @@ const Home = () => {
           <Col className="text-center">
             <Accordion defaultActiveKey="0">
               <Accordion.Toggle as={Button} variant="link" eventKey="0">
-                <Button variant="dark">Add New Car <FaPlus style={{ position: "relative", top: "-1px" }} /></Button>
+                <Button variant="dark">Dodaj novi automobil <FaPlus style={{ position: "relative", top: "-1px" }} /></Button>
               </Accordion.Toggle>
               <Accordion.Collapse eventKey="0">
                 <AddCar onAdd={addCar} />
