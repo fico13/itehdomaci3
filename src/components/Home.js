@@ -99,7 +99,7 @@ const Home = () => {
       engine: "Petrol",
       price: "12.990",
       mileage: "0",
-      img: 'https://gcdn.polovniautomobili.com/user-images/thumbs/1511/15113417/eab4c65e0a17-800x600.jpg',
+      img: 'https://gcdn.polovniautomobili.com/user-images/thumbs/1902/19024347/dcfe121c9c79-800x600.jpg',
       desc: `*** NOVO VOZILO *** OGRANICENA KOLICINA. ***
         Astra J sedan sa 1.4 turbo motorom sa 140ks. Godina proizvodnje 2020. Fabricka garancija 5 godina.       
         Cena 12.990 je bez alu felni od 16 cola. Cena sa felnama je 13.250€ .        
